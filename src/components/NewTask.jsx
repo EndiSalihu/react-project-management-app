@@ -12,17 +12,9 @@ export const NewTask = ({ onAdded }) => {
   };
 
   return (
-    <div className='flex items-center gap-4 max-md:flex-col'>
-      <input
-        type="text"
-        placeholder='Type something...'
-        className='w-64 px-2 py-1 rounded-sm bg-stone-300 max-md:w-44 max-sm:w-36'
-        value={enteredTask}
-        onChange={(e) => setEnteredTask(e.target.value)}
-      />
-      <button onClick={handleClick} className='text-stone-700 hover:text-stone-950 '>
-        Add Task
-      </button>
+    <div className='new-task'>
+      <input type="text" placeholder='Type something...' value={enteredTask} onChange={(e) => setEnteredTask(e.target.value)}   />
+      <button onClick={handleClick}>Add Task</button>
     </div>
   );
 };

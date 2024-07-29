@@ -80,7 +80,7 @@ const handleDeleteTask = (taskId) => {
 
 
   return (
-    <main className="my-14 h-screen flex gap-8 max-lg:gap-3">
+    <main id="main" >
       <ProjectsSidebar
         onStartAddProject={handleStartAddProject}
         listedProjects={projects.projects}
